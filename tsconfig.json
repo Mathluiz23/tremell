@@ -1,27 +1,32 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "target": "ES2017", // Compatível com Next.js e navegadores modernos
+    "lib": ["dom", "dom.iterable", "esnext"], // Suporte a ESNext e funcionalidades de DOM
+    "allowJs": true, // Permite usar arquivos JavaScript junto com TypeScript
+    "skipLibCheck": false, // Habilite para verificar tipos em bibliotecas (mais seguro)
+    "strict": true, // Habilita todas as verificações de tipo estritas
+    "noEmit": true, // Impede a saída de arquivos compilados (útil em Next.js)
+    "esModuleInterop": true, // Facilita o uso de módulos CommonJS
+    "module": "esnext", // Usa o sistema de módulo mais recente
+    "moduleResolution": "node", // Resolve módulos como Node.js
+    "resolveJsonModule": true, // Permite a importação de arquivos JSON
+    "isolatedModules": true, // Exige que cada arquivo seja tratado como um módulo independente
+    "jsx": "preserve", // Mantém o JSX como está para ser processado pelo Next.js
+    "incremental": true, // Habilita compilações incrementais para maior desempenho
+    "paths": {
+      "@/*": ["./src/*"] // Atalho para facilitar imports na pasta src
+    },
     "plugins": [
       {
-        "name": "next"
+        "name": "next" // Integração com Next.js
       }
-    ],
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts", // Configuração padrão do Next.js para tipos
+    "**/*.ts", // Inclui todos os arquivos TypeScript
+    "**/*.tsx", // Inclui todos os arquivos TypeScript com JSX
+    ".next/types/**/*.ts" // Tipos gerados automaticamente pelo Next.js
+  ],
+  "exclude": ["node_modules"] // Exclui a pasta node_modules
 }
