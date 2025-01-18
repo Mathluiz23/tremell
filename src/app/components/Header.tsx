@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import tremell from "./tremell.png";
+import "./header.css";
 
 export default function Header() {
   return (
@@ -9,8 +10,8 @@ export default function Header() {
           src={tremell}
           alt="Logo da Empresa"
           className="logo"
-          width={100}
-          height={100}
+          width={120}
+          height={120}
         />
       <nav className="nav">
         <Link href="#sobre" legacyBehavior>
