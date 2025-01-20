@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import tremell from "./tremell.png";
-import "./header.css";
+import "../styles/Header.module.css";
 
 export default function Header() {
   return (
