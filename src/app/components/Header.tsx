@@ -1,27 +1,27 @@
-import Link from 'next/link';
+import styles from '../styles/Header.module.css';
 import Image from 'next/image';
-import tremell from "./tremell.png";
-import "../styles/Header.module.css";
+import Link from 'next/link';
+import tremell from '../components/tremell.png';
 
 export default function Header() {
   return (
-    <header className="header">
-        <Image
-          src={tremell}
-          alt="Logo da Empresa"
-          className="logo"
-          width={120}
-          height={120}
-        />
-      <nav className="nav">
+    <header className={styles.header}>
+      <Image
+        src={tremell}
+        alt="Logo da Empresa"
+        className={styles.logo}
+        width={120}
+        height={120}
+      />
+      <nav className={styles.nav}>
         <Link href="#sobre" legacyBehavior>
-          <a className="nav-link">Sobre</a>
+          <a className={styles.navLink}>Sobre</a>
         </Link>
         <Link href="#localizacao" legacyBehavior>
-          <a className="nav-link">Localização</a>
+          <a className={styles.navLink}>Localização</a>
         </Link>
         <Link href="#contato" legacyBehavior>
-          <a className="nav-link">Contato</a>
+          <a className={styles.navLink}>Contato</a>
         </Link>
       </nav>
     </header>
