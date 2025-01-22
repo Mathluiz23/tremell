@@ -1,6 +1,6 @@
-import wallpaper from './wallpaper.png';
+import wallpaper from '../assets/wallpaper.png';
 import styles from '../styles/Main.module.css';
-import tremell from '../components/tremell.png';
+import tremell from '../assets/tremell.png';
 import Image from 'next/image';
 import Link from 'next/link';
 
