@@ -1,16 +1,27 @@
 .sobre {
     padding: 60px 20px;
-    background-color: #f4f4f4;
+    background-color: black;
     text-align: center;
+  }
+
+  .sobreContent {
+    width: 50%;
+    margin: 100px;
   }
   
   .sobre h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: yellow;
+  }
+
+  .sobre h3 {
+    font-size: 1.5rem;
+    color: #fffcfc;
   }
   
   .sobre p {
     font-size: 1.2rem;
-    color: #555;
+    color: #fffcfc;
   }
   
