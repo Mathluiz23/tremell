@@ -31,8 +31,9 @@ export default function Main() {
         </nav>
       </header>
       <div className={styles['main-content']}>
-        <h1>Bem-vindo à nossa página</h1>
-        <p>Explore nossos serviços e soluções.</p>
+        <h1>Bem-vindo à Emell</h1>
+        <h3>Terraplenagem de alta qualidade</h3>
+        <h3>Seu parceiro de confiança em desenvolvimento de terrenos</h3>
       </div>
     </div>
   );
