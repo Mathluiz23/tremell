@@ -7,7 +7,7 @@
 
 .servicos h2,
 .servicos h3 {
-  animation: slideDown 1s ease-out forwards;
+  animation: slideDown 3s ease-out forwards;
   opacity: 0;
   transform: translateY(-20px);
 }
@@ -24,7 +24,7 @@
 .card {
   opacity: 0;
   transform: translateY(50px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 1s ease, transform 0.8s ease;
 }
 
 /* Classe aplicada pelo Intersection Observer */
@@ -34,7 +34,7 @@
 }
 
 .card img {
-  width: 100%;
+  width: 80%;
   height: auto;
   object-fit: cover;
   object-position: center;
@@ -42,7 +42,7 @@
 }
 
 .card:hover img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .card h3 {
