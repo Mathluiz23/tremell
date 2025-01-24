@@ -1,37 +1,89 @@
 .contato {
   padding: 80px 20px;
-  background-color: #d7d7d789;
+  background: linear-gradient(135deg, #f7f7f7, #e4e4e4);
   text-align: center;
+  overflow: hidden;
+}
+
+.contato h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  gap: 40px;
   margin-top: 30px;
-  margin: 30px;
 }
 
 .info {
-  text-align: left;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .info h3 {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-size: 1.8rem;
   color: #333;
 }
 
-.info p {
-  margin-bottom: 10px;
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contactList li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
   font-size: 1rem;
   color: #555;
-  line-height: 2;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #0077b5;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.socialLink {
+  color: #555;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #0077b5;
+}
+
+.map {
+  overflow: hidden;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .map iframe {
   width: 100%;
-  height: 300px;
+  height: 400px;
   border: 0;
   border-radius: 10px;
 }
@@ -43,9 +95,5 @@
 
   .info {
     text-align: center;
-  }
-
-  .map iframe {
-    height: 250px;
   }
 }
