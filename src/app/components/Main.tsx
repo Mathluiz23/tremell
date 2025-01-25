@@ -28,7 +28,7 @@ export default function Main() {
           />
         </motion.div>
         <nav className={styles.nav}>
-          {['#sobre', '#localização', '#contato'].map((href, index) => (
+          {['#sobre', '#serviços', '#contato'].map((href, index) => (
             <motion.div
               key={href}
               initial={{ opacity: 0, y: -20 }}
