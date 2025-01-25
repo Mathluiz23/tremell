@@ -1,27 +1,65 @@
 .sobre {
-    padding: 60px 20px;
-    background-color: black;
-    text-align: center;
+  padding: 60px 20px;
+  background-color: black;
+  text-align: center;
+}
+
+.sobreContent {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sobre h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+.sobre h3 {
+  font-size: 1.5rem;
+  color: #fffcfc;
+}
+
+.sobre p {
+  font-size: 1.2rem;
+  color: #fffcfc;
+  line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobreContent {
+    width: 80%;
   }
 
-  .sobreContent {
-    width: 50%;
-    margin: 100px;
-  }
-  
   .sobre h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: yellow;
+    font-size: 2rem;
   }
 
   .sobre h3 {
-    font-size: 1.5rem;
-    color: #fffcfc;
+    font-size: 1.3rem;
   }
-  
+
   .sobre p {
-    font-size: 1.2rem;
-    color: #fffcfc;
+    font-size: 1rem;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .sobreContent {
+    width: 100%;
+  }
+
+  .sobre h2 {
+    font-size: 1.8rem;
+  }
+
+  .sobre h3 {
+    font-size: 1.2rem;
+  }
+
+  .sobre p {
+    font-size: 0.9rem;
+  }
+}
