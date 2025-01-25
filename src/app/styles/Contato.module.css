@@ -73,8 +73,8 @@
 }
 
 .socialLink:hover {
-  box-shadow: yellow;
   transform: scale(1.2);
+  color: yellow;
 }
 
 .map {
@@ -89,6 +89,7 @@
   border-radius: 10px;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
   .wrapper {
     grid-template-columns: 1fr;
@@ -100,5 +101,27 @@
 
   .map iframe {
     height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contato h2 {
+    font-size: 2rem;
+  }
+
+  .info h3 {
+    font-size: 1.5rem;
+  }
+
+  .contactList li {
+    font-size: 1rem;
+  }
+
+  .socialLink {
+    font-size: 1.5rem;
+  }
+
+  .map iframe {
+    height: 250px;
   }
 }
