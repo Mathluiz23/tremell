@@ -29,7 +29,7 @@
 }
 
 .main-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   color: yellow;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
@@ -100,15 +100,9 @@
     font-size: 0.9rem;
   }
 
-  .header {
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px;
-  }
-
   .logo {
-    max-height: 40px;
-  }
+    margin-left: -20px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -121,15 +115,10 @@
   }
 
   .nav {
-    flex-direction: column;
     gap: 8px;
   }
 
   .navLink {
     font-size: 0.8rem;
-  }
-
-  .header {
-    align-items: center;
   }
 }
