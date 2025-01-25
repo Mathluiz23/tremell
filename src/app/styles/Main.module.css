@@ -16,7 +16,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Escurecer fundo */
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -25,23 +25,23 @@
   z-index: 2;
   color: white;
   text-align: center;
+  padding: 20px;
 }
 
 .main-content h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   color: yellow;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
 }
 
 .main-content h3 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #ffffff;
-  margin-top: 15px;
+  margin-top: 10px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
-/* Estilos do Header */
 .header {
   position: fixed;
   top: 0;
@@ -57,7 +57,7 @@
 }
 
 .logo {
-  max-height: 60px;
+  max-height: 50px;
   object-fit: contain;
   cursor: pointer;
   animation: fadeIn 1s ease-in-out;
@@ -65,13 +65,13 @@
 
 .nav {
   display: flex;
-  gap: 20px;
+  gap: 15px;
 }
 
 .navLink {
   color: yellow;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   transition: all 0.3s ease;
 }
@@ -82,12 +82,54 @@
   transform: scale(1.1);
 }
 
-/* Animações */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
+/* Responsividade */
+@media (max-width: 768px) {
+  .main-content h1 {
+    font-size: 2.5rem;
   }
-  to {
-    opacity: 1;
+
+  .main-content h3 {
+    font-size: 1rem;
+  }
+
+  .nav {
+    gap: 10px;
+  }
+
+  .navLink {
+    font-size: 0.9rem;
+  }
+
+  .header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .logo {
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content h1 {
+    font-size: 2rem;
+  }
+
+  .main-content h3 {
+    font-size: 0.9rem;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .navLink {
+    font-size: 0.8rem;
+  }
+
+  .header {
+    align-items: center;
   }
 }
