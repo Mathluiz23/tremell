@@ -44,7 +44,7 @@ export default function Servicos() {
   ];
 
   return (
-    <section id="servicos" className={styles.servicos} ref={sectionRef}>
+    <section id="serviços" className={styles.servicos} ref={sectionRef}>
       <h2>Nossos Serviços</h2>
       <h3>Soluções abrangentes para seus projetos</h3>
       <div className={styles.cards}>
