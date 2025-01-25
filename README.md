@@ -11,15 +11,13 @@
 ## 🚀 Funcionalidades
 - Design responsivo e moderno
 - Animações suaves com **Framer Motion**
-- Estrutura estilizada com **Styled Components**
-- Integração com [API ou serviço específico, se aplicável]
+- Estrutura estilizada com **CSS3**
 
 
 ## 🛠 Tecnologias Utilizadas
 - **Next.js** v15.1.4
-- **React** v19.0.0
-- **Styled Components** v6.1.14
-- **TailwindCSS** v3.4.1
+- **Typescript** v19.0.0
+- **CSS3** v6.1.14
 - **Framer Motion** v11.18.2
 - **React Icons** v5.4.0
 
