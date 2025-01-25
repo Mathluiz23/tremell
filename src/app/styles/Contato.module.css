@@ -73,20 +73,20 @@
 }
 
 .socialLink:hover {
-  color: #f9e003;
+  box-shadow: yellow;
   transform: scale(1.2);
 }
 
 .map {
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .map iframe {
   width: 100%;
   height: 335px;
   border: 0;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
