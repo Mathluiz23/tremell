@@ -4,10 +4,14 @@
   color: white;
   text-align: center;
   font-size: 0.9rem;
+  box-shadow: 0 -10px 15px rgba(0, 0, 0, 0.5); /* Sombra apenas na parte superior */
+  position: relative; /* Garante que o footer fique posicionado corretamente */
+  z-index: 1; /* Eleva o footer acima de outros elementos */
 }
 
 .footer a {
-  color: #ffcc00;
+  /* color: #ffcc00; */
+  color: yellow;
   text-decoration: none;
 }
 
