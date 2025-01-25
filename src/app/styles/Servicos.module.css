@@ -5,7 +5,9 @@
   color: #fff;
 }
 
-.servicos h2,
+.servicos h2 {
+  text-shadow: 2px 2px 4px #7e7e7e;
+}
 .servicos h3 {
   animation: slideDown 3s ease-out forwards;
   opacity: 0;
