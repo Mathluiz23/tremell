@@ -5,9 +5,16 @@ import wallpaper from '../assets/wallpaper.png';
 import styles from '../styles/Main.module.css';
 import tremell from '../assets/tremell.png';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 export default function Main() {
+  const handleScrollToSection = (id) => {
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div
       className={styles.main}
@@ -36,9 +43,15 @@ export default function Main() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 * index, duration: 1 }}
             >
-              <Link href={href} legacyBehavior>
-                <a className={styles.navLink}>{href.slice(1).toUpperCase()}</a>
-              </Link>
+              <a
+                className={styles.navLink}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleScrollToSection(href);
+                }}
+              >
+                {href.slice(1).toUpperCase()}
+              </a>
             </motion.div>
           ))}
         </nav>
