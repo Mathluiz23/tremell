@@ -102,7 +102,7 @@
 
   .logo {
     margin-left: -20px;
-    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -120,5 +120,36 @@
 
   .navLink {
     font-size: 0.8rem;
+  }
+}
+
+/* Animação de digitação */
+.typewriter {
+  display: inline-block;
+  font-size: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 4px solid yellow; /* Efeito do cursor piscando */
+  animation: typing 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite, stopBlink 15s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes stopBlink {
+  100% {
+    border-color: transparent; /* O cursor desaparece após a animação de digitação */
   }
 }
