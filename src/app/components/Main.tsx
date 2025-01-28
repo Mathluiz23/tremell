@@ -48,9 +48,28 @@ export default function Main() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1.5 }}
       >
-        <h1>Bem-vindo à Emell</h1>
-        <h3>Terraplenagem de alta qualidade</h3>
-        <h3>Seu parceiro de confiança em desenvolvimento de terrenos</h3>
+        <motion.h1
+          className={styles.typewriter}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
+          Bem-vindo à Emell
+        </motion.h1>
+        <motion.h3
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
+          Terraplenagem de alta qualidade
+        </motion.h3>
+        <motion.h3
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.6 }}
+        >
+          Seu parceiro de confiança em desenvolvimento de terrenos
+        </motion.h3>
       </motion.div>
     </div>
   );
