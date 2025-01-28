@@ -2,12 +2,15 @@
   padding: 60px 20px;
   background-color: black;
   text-align: center;
+ 
 }
 
 .sobreContent {
-  width: 50%;
-  margin: 0 auto;
-  padding: 20px;
+  width: 60%;
+  margin: 80px auto;
+  padding: 50px;
+  border-left: 3px solid yellow;
+  border-right: 3px solid yellow;
 }
 
 .sobre h2 {
@@ -25,6 +28,7 @@
   font-size: 1.2rem;
   color: #fffcfc;
   line-height: 1.5;
+  margin-top: 10px;
 }
 
 /* Responsividade */
