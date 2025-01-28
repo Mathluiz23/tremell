@@ -25,6 +25,7 @@ export default function Main() {
             className={styles.logo}
             width={120}
             height={120}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           />
         </motion.div>
         <nav className={styles.nav}>
