@@ -8,7 +8,7 @@
 .contato h2 {
   font-size: 2.5rem;
   color: #222;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -87,6 +87,10 @@
   height: 335px;
   border: 0;
   border-radius: 10px;
+}
+
+.map iframe:hover {
+  box-shadow: 0 6px 50px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsividade */
