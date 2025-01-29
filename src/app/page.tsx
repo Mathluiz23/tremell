@@ -4,6 +4,7 @@ import Servicos from './components/Servicos';
 import Contato from './components/Contato';
 import Footer from './components/Footer';
 import Main from './components/Main';
+import WhatsAppButton from './components/WhatsAppButton';
 
 export default function Home() {
   return (
@@ -12,8 +13,10 @@ export default function Home() {
       <Sobre />
       <Servicos />
       {/* <Galeria /> */}
+      
       <Contato />
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
