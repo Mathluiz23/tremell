@@ -1,4 +1,4 @@
-# Emell Terraplanagem 🚜 🚚 
+<h1 align="center">🚜 Emell Terraplanagem 🚚 </h1>
 
 <div>
    <h3>Página desenvolvida para uma empresa especializada em terraplenagem, aterro , nivelamento, compactação, drenagem, entre outros serviços.</h3>
@@ -17,7 +17,7 @@
 ## 🛠 Tecnologias Utilizadas
 - **Next.js** v15.1.4
 - **Typescript** v19.0.0
-- **CSS3** v6.1.14
+- **CSS3**
 - **Framer Motion** v11.18.2
 - **React Icons** v5.4.0
 
