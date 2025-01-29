@@ -18,3 +18,31 @@ h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 
+    0px 8px 20px rgba(0, 0, 0, 0.4), /* Sombra principal */
+    inset 0px -3px 5px rgba(0, 0, 0, 0.2); /* Sombra interna para relevo */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 99999;
+}
+
+.whatsapp-button:hover {
+  background-color: #1EBE5D;
+  transform: scale(1.1);
+  box-shadow: 
+    0px 10px 25px rgba(0, 0, 0, 0.5), /* Sombra mais forte ao passar o mouse */
+    inset 0px -4px 6px rgba(0, 0, 0, 0.25);
+}
+
