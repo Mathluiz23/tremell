@@ -30,8 +30,8 @@ export default function Main() {
             src={tremell}
             alt="Logo da Empresa"
             className={styles.logo}
-            width={120}
-            height={120}
+            width={100}
+            height={150}
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           />
         </motion.div>
