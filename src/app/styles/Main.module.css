@@ -57,10 +57,11 @@
 }
 
 .logo {
-  max-height: 50px;
+  max-height: 75px;
   object-fit: contain;
   cursor: pointer;
   animation: fadeIn 1s ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 .nav {
@@ -131,7 +132,7 @@
   white-space: nowrap;
   overflow: hidden;
   border-right: 4px solid yellow; /* Efeito do cursor piscando */
-  animation: typing 4s steps(40) 1s 1 normal both, blink 0.75s step-end infinite, stopBlink 15s forwards;
+  animation: typing 4s steps(35) 1s 1 normal both, blink 0.75s step-end infinite, stopBlink 6s forwards;
 }
 
 @keyframes typing {
