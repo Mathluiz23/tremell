@@ -19,7 +19,7 @@
 - **Typescript** v19.0.0
 - **CSS3**
 - **Framer Motion** v11.18.2
-- **React Icons** v5.4.0
+- **React Icons** 
 
 ---
 
