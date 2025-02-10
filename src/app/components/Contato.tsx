@@ -39,7 +39,7 @@ const Contato = () => {
             </li>
             <li>
               <FaPhone className={styles.icon} />
-              (99) 99999-9999
+              (51) 99011-9584
             </li>
             <li>
               <FaEnvelope className={styles.icon} />
