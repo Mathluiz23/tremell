@@ -35,7 +35,7 @@ const Contato = () => {
           <ul className={styles.contactList}>
             <li>
               <FaMapMarkerAlt className={styles.icon} />
-              Estr. Willy Moehlecke, 1490, Lomba Grande - RS, 93490-440
+              Estrada Willy Moehlecke, 1490, Lomba Grande - RS, 93490-440
             </li>
             <li>
               <FaPhone className={styles.icon} />
